@@ -176,7 +176,7 @@ public class StudentAndCourseTest extends TestCase {
 				int cc = (int)Math.random() * 500000;
 				Student s2 = new Student(aa, b, cc);
 				boolean added = c.addStudent(s2);
-				assertTrue("addStudent not working properly", added);
+				assertTrue("add Student not working properly", added);
 
 				assertEquals("seats not updated after adding a student", s - j - 1, c.getRemainingSeats());
 			}
